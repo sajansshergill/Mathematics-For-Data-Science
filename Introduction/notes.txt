@@ -1,0 +1,90 @@
+=> SLUG: definition, use case, and applications | 
+How to use Linear Algebra in various techniques specifically 
+to solve use cases with respect to ML, DS, DL.
+
+- Linear Algebra is a branch of mathematics that focuses on the study of 
+vectors, vector spaces (also called linear spaces), linear transformations, 
+and systems of linear equations.
+- It provides a framework for understanding the properties and operations of 
+these mathematical objects, known as scalars, matrices, and vectors.
+
+- Linear Algebra works well with higher-dimensional data.
+
+=> Applications
+1. Data Representation and Manipulation
+
+Example: House Price Prediction
+
+The input features and output features need to be represented in terms of 
+vectors.
+
+Due to vectors, we will be able to quantify the relationship between 
+input (X) feature and output (Y) feature.
+If quantity → 𝑌 = 𝑓(𝑋) then 𝑋↑ or vice versa.
+If quantity → 𝑋 = 𝑓(𝑌) then 𝑌↑ or vice versa.
+
+- When we say that it will be able to quantify, it means we will be thinking 
+about the concepts of covariance and correlation.
+
+(Important):
+ - 1D, 2D diagrams: practice coding. : All files implemented
+
+- Dimensionality reduction: Linear Algebra can convert 500 features 
+into only 2 features. This is known as PCA (Principal Component Analysis). 
+(What is the pattern data actually follows?)
+
+2. Machine Learning and Artificial Intelligence
+
+- Model Train (practice coding of LR model train) — take patterns.
+
+- Dimensionality Reduction → PCA → Eigenvalue and Eigenvector.
+
+- Neural Networks: Forward propagation, Backward propagation
+
+- How to use NN with GPUs?
+GPU cores → Matrix Multiplication (parallelly)
+TensorFlow library to create a NN.
+
+""""
+   b1
+    ↓
+   [•] -- w1 -->  
+         \        
+          \       
+           > [•] ----->  Output (o/p)
+          /       
+         /        
+   [•] -- w2 -->
+    ↑
+   b2
+""""
+
+"""
+Input Layer       Hidden Layer       Output Layer
+   (x1)  ---- w1 ----> (h1) ----
+           \             \         \
+            \---- w2 ----> (h2) ----> (y)
+   (x2)  ---- w3 ----> (h1) ----
+           \             \         
+            \---- w4 ----> (h2)
+"""
+
+- For backward propagation: we update the weights using the chain rule 
+of derivatives.
+
+- For forward propagation: perform matrix multiplication and add a bias 
+(so it’s an addition operation in MM).
+
+3. Computer Graphics
+
+- Linear Algebra is used to perform transformations such as scaling, 
+rotation, and translation of objects in computer graphics.
+
+4. Optimization
+
+Solving Equations (Linear Equations): Gradient Descent Concept
+y=mx+c
+
+where 
+m = slope, 
+c = intercept.
