@@ -1,0 +1,79 @@
+=> SLUG: definition, examples, application in Data Science
+
+=> Scalars:
+A scalar is a single numerical value. It represents a magnitude or quantity and has no direction.
+
+- Examples: Car speed: 45 km/hr,  Temperature in Celsius: T = 25°C
+
+- Application in Data Science:
+| f1 | f2 | f3 |
+| -- | -- | -- |
+|    |    |    |
+|    |    |    |
+
+::  Data set: Count of the total no. of records = 4
+:: Average of the feature f = ___
+:: Simple Linear Regression
+
+=> Vector:
+A vector is a numerical value which has both magnitude and direction.
+
+- Example: Speed of car = 45 km/hr moving east.
+
+- Data Science definition for Vector: A vector is an ordered list of numbers. It can represent a point in space or a quantity 
+with both magnitude and direction.
+
+- Example: Student marks
+| ID  | No. of Study Hours | Pass/Fail |
+| --- | ------------------ | --------- |
+| 90  | 3 hrs              | Fail      |
+| 100 | 3 hrs              | Pass      |
+A vector representing ID and no. of study hours = [90, 3 hrs]
+magnitude→ "3" and "hrs" → units
+
+- If representing a vector in data science, it represents a collection of values.
+- It can be in different dimensions.
+
+- Example:
+:: A vector representing a person’s weight over time = [70, 72, 75, 73] (4 dimensions).
+:: Every point (data point in a dataset) is specifically represented in the form of a vector.
+- Unit vector: 3i + 3j
+
+=> Addition of Vectors
+- SLUG: definition, examples, application in data science
+
+- Addition of vectors is more like how you are traversing from one vector to the other vector.
+
+- Applications:
+1. Data Aggregation Task
+2. Feature Engineering
+3. Word Embeddings
+4. Image Processing
+
+=> Multiplication of Vectors
+- SLUG: definition, application in data science
+
+- 3 Types:
+1. Dot Product (Inner Product)
+2. Element-wise Multiplication
+3. Scalar Multiplication
+
+1. Dot Product
+- The dot product of 2 vectors results in a scalar and is calculated as the sum of the products of their corresponding components.
+
+-In order to project the product A*B we will go and see the length of projected B(bar)Then we will take this length and specifically 
+multiply by vector length of A(bar)
+
+i - If vectors are in opposite directions, the dot product value of vectors will be negative.
+ii - If vector is pointing towards origin, the entire dot product will be 0.
+iii - If vectors are in the same direction, the dot product will be positive.
+
+- Application
+
+1. Cosine Similarity
+Definition: It is a measure used to determine how similar two vectors are. It calculates the cosine of the angle 
+between two vectors, providing a similarity score that ranges from -1 (dissimilar) to 1 (completely similar).
+
+cosθ= A*B / ||A|| * ||B||
+
+- Example use case: Recommendation System
